@@ -7,7 +7,7 @@ const DEFAULTS = Object.freeze({
     enabled: true,
     pattern: 'Proxy error \\(HTTP \\d{3}',   // case-insensitive; regex when useRegex is true
     useRegex: true,
-    maxRetries: 20,
+    maxRetries: 10,
     delayMs: 1000,            // wait before each swipe
 });
 
