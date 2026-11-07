@@ -5,9 +5,9 @@
 const MODULE = 'proxy_error_retry';
 const DEFAULTS = Object.freeze({
     enabled: true,
-    pattern: 'proxy error',   // case-insensitive substring (or regex if useRegex)
-    useRegex: false,
-    maxRetries: 10,
+    pattern: 'Proxy error \\(HTTP \\d{3}',   // case-insensitive; regex when useRegex is true
+    useRegex: true,
+    maxRetries: 20,
     delayMs: 1000,            // wait before each swipe
 });
 
